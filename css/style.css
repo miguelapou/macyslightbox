@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #7B8D8E;  
+}
+a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: oswald;
+  background-color: #44B3C2;
+}
+.body-wrapper {
+  width: 100%;
+  color: #000;
+  font-family: "Open Sans",Helvetica,sans-serif;
+  font-size: 1em;
+}
+.container{
+  width: 960px;
+  margin:0 auto;
+  padding: 0;
+}
+#event-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.event-item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding:0;    
+  width: 33.33%;
+  min-width: 290px;
+  color: #333;
+  word-wrap: break-word;
+}
+.event-header{
+  padding: 0px 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 28px;
+  color:#FFF;
+  font-family: 'Luckiest Guy';
+}
+.event-banner {
+  width:100%;
+  max-width: 540px;
+  min-height:240px;
+  margin: 0 auto;
+  background-image: url(http://iot.macy.s3.amazonaws.com/wp_media_content/2016/09/091516_lwh_hispanic_heritage_month-NEW.jpg);
+  background-size:100% auto;  
+  border: 1px solid #000;
+  margin-top: 2px;
+}
+.event-box {
+  margin: 20px 8px;
+  padding: 20px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #F2EDD8;
+}
+.event-item-wrap {
+  background: #E45641;
+  margin: 5px auto;
+  padding: 10px 0px;
+  max-width:180px;
+  min-width: 110px;
+  width: 60%;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.event-item-date {
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+}
+.event-item-month, .event-item-time {
+  color: #fff;
+  font-size: 1em;
+  line-height: 2em;
+  font-family: Oswald;    
+}
+.event-item-storename {
+  color: #000;
+  font-size: 1.1em; 
+  margin: 25px 0 10px 0;
+  font-family: Oswald;
+}
+.event-item-floor, .event-item-street {
+  color: #666;
+  font-size: 0.8em;
+  margin: 5px 0 0 0; 
+}
+.event-item-address { 
+  margin: 5px 0 0 0;
+  font-family: Oswald;  
+}
+.event-item-desc {
+  font-size: 0.9em;
+  margin: 10px 0;
+  text-align: left;
+  font-family: Raleway;
+  text-align: center;
+}
+.event-item-rsvp {
+    margin: 20px 0 0;
+    text-decoration: none !important;
+}
+.app-button {
+  background: #44B3C2;
+  border: 1px solid #555;
+  line-height: 2.5;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s ease-in 0s;
+  margin: 10px auto;
+  padding: 4px 0;
+  max-width:180px;
+  min-width: 110px;
+  width: 60%;
+  font-size: 0.7em;
+  font-weight:600;
+  cursor: pointer;
+}
+.app-button:hover {
+  background: #aaa;
+}
+
+/* css for popup / Lightbox */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  padding-top: 60px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #000; 
+  background-color: rgba(0,0,0,0.6); 
+  font-family: "Open Sans",Helvetica,sans-serif;
+  font-size: 1em;
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #333;
+  width: 65%;
+  min-height: 100px;
+  z-index: 999;
+}
+.close {
+  color: #555;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 2.5em;
+}
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#modalBody .event-item {
+  width: 100%;
+  text-align: center;
+}
+/* css for medium device */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .container{
+    width: 100%;
+  }
+  .event-item {
+    width: 50%;
+  }
+}
+/* css for small(tablet) device */
+@media only screen and (max-width : 768px) {
+  .container{
+    width: 100%;
+  }
+  .event-box {
+    margin: 20px;
+  }
+  .event-item {
+    width: 100%;
+  }
+  .modal-content {
+      width: 65%;
+  }
+}
+/* css for X-small (mobile) device */
+@media only screen  and (max-width : 420px) {
+  .container{
+    width: 100%;
+  }
+  .event-item {
+    width: 100%;
+  }
+}
